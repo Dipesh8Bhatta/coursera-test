@@ -9,11 +9,11 @@
 <body ng-controller="LunchCheckController">
 <div>
     <h1>Enter your Launch items</h1>
-    <input type="text" ng-model="content">(DO NOT INPUT an empty item, i.e., , ,)
+    <input type="text" style="border-color:{{color}};" ng-model="content" >(DO NOT INPUT an empty item, i.e., , ,)
     <br>
     <button ng-click="checkIfTooMuch()">Check If Too Much</button>
     <br>
-    <div>{{showMessage}}</div>
+    <p style="color:{{color}};">{{showMessage}}</p>
 </div>
 </body>
 </html>

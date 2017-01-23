@@ -16,6 +16,7 @@
         $scope.checkIfTooMuch = function () {
             if($scope.content == ''){
                 $scope.showMessage = 'Please Enter the data first'
+                $scope.color = 'red';
             }else{
                 var launchItem = $scope.content;
                 var listOfLaunchItem = launchItem.split(',');
@@ -25,6 +26,7 @@
                 }else {
                     $scope.showMessage = 'Too much';
                 }
+                $scope.color = 'green';
             }
         };
     };

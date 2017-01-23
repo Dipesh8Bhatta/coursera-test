@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="LunchCheck" lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <script src="../angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Module1-Solution</title>
+</head>
+<body ng-controller="LunchCheckController">
+<div>
+    <h1>Enter your Launch items</h1>
+    <input type="text" ng-model="content">(DO NOT INPUT an empty item, i.e., , ,)
+    <br>
+    <button ng-click="checkIfTooMuch()">Check If Too Much</button>
+    <br>
+    <div>{{showMessage}}</div>
+</div>
+</body>
+</html>

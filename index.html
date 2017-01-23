@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="DIApp" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Hello World</title>
+</head>
+<body>
+<h1>My First AngularJs App</h1>
+<div ng-controller="DIController">
+    <input type="text" ng-model="name" ng-blur="upper();"> inside my textbox: {{name}}
+    <br>
+    {{showMessage()}}
+
+    <div>
+        <button ng-click="changePet()"><b>Change Pet</b></button>
+        <br>
+        <img ng-src="images/{{nameOfPet}}.JPG" height="500" width="700">
+    </div>
+    </div>
+
+    </div>
+</div>
+</body>
+</html>
